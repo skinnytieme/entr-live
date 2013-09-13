@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Entr | Discover & Win!</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- JS
+  ================================================== -->
+	<!--Global -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!--Slider -->
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+
+	<!--Slabtext -->
+	<script src="js/jquery.slabtext.js"></script>
+
+	<!--Sticky Scroll -->
+	<script src="js/jquery.stickyscroll.js"></script>
+	
+  	<!--Custom -->
+	<script src="js/custom.js"></script>
+
+	<!-- CSS
+  ================================================== -->
+	<!--Global -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--Slider -->	
+	<link href="js/assets/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- Slab Text -->
+	<link href="js/assets/slabtext.css" rel="stylesheet" />
+	
+	<!-- Animate -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	
+	<!-- Icons (w/Retina) -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  auto: true,
+			  preventDefaultSwipeY: false,
+			  swipeThreshold: 70,
+			  pause: 7000,
+			  autoDelay: 2,
+			  autoHover: true
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<!-- Header
+  ================================================== -->
+	<div class="band header">
+		<div class="container">
+			<div class="fifteen columns top-bar">
+
+				<a href="#!">
+				<div class="mob-nav" id="mob-nav-lnk"><i class="icon-align-justify"></i></div>
+				</a>
+			
+				<a href="#"><div class="logo"></div></a>
+	
+				<ul class="nav">
+					<a href="#!" id="discover-lnk"><li>Discover & Win!<i class="icon-chevron-down"></i></li></a>
+					<a href="#"><li>Closed Competitions</li></a>
+				</ul>
+				
+				<div class="drop" id="discover-drop">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li class="nobrdr">
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						
+						<a href="#"><li class="discover-all">View All Competitions <i class="icon-chevron-right"></i></li></a>
+					</ul>
+				</div>
+			
+				<ul class="login">
+					<a href="#"><li><div class="entr-btn fb-login-btn"><i class="icon-facebook"></i><span>Login with Facebook</span></div></li></a>
+					<a href="#"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>
+				</ul>
+
+				<!--<ul class="login">
+					<a href="#!" id="user-lnk" class="toggle">
+						<li>
+							<div class="user-logged-in">
+								<div class="user-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/1117511_1419176055_2061034126_q.jpg');">
+								</div>
+								
+								<p>Scott <hidden>Graham</hidden></p>
+								<i class="icon-chevron-down"></i>
+							</div>
+						</li>
+					</a>
+				</ul>-->
+				
+				<div class="drop" id="user-drop" class="toggle">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#"><li><i class="icon-user"></i> My Profile</li></a>
+						<a href="#"><li><i class="icon-trophy"></i> My Competitions</li></a>
+						<a href="#"><li><i class="icon-envelope"></i> Email Settings</li></a>
+						<a href="#"><li><i class="icon-comments"></i> Talk to Us</li></a>
+						<a href="#"><li class="nobrdr"><i class="icon-off"></i> Logout</li></a>
+					</ul>
+				</div>
+			</div><!-- fifteen column layout -->
+		</div><!-- container -->
+	</div><!--- header band -->
+
+
+	<!-- Focus on the Modal/Drop -->
+	<div class="dropdown-overlay"></div>
+
+	<!-- Bannr Slider (Li Represents Slide)
+  ================================================== -->
+	<ul class="bxslider">
+		<li id="home-slide">
+			<div class="band banner animated fadeIn" style="background-image: url('images/banners/home.jpg'); animation-delay:0.2s; -webkit-animation-delay:0.2s;">
+				<div class="container animated fadeIn" style="animation-delay:1s; -webkit-animation-delay:1s;">
+					<div class="fifteen columns">
+						<div class="banner" id="home-slide">
+							<h1>What's New? <strong>Discover & Win!</strong></h1>
+							
+							<div id="home-slide-tags">
+								<ul>
+									<a href="#"><li>Win A Tailormade Savile Suit</li></a>
+									<a href="#"><li>Win Tooty Fruity Cider</li></a>
+									<a href="#"><li>Win A Kindle Fire</li></a>
+									<a href="#"><li>Win A Gourmet Meal For Two</li></a>
+									<a href="#"><li>Win 5 Hot Tub Cinema Tickets</li></a>
+									<a href="#"><li>Win A Tailormade Savile Suit</li></a>
+									<a href="#"><li>Win Tooty Fruity Cider</li></a>
+									<a href="#"><li>Win A Kindle Fire</li></a>
+									<a href="#"><li>Win A Gourmet Meal For Two</li></a>
+									<a href="#"><li>Win 5 Hot Tub Cinema Tickets</li></a>
+									<a href="#"><li>Win A Gourmet Meal For Two</li></a>
+									<a href="#"><li>Win 5 Hot Tub Cinema Tickets</li></a>
+									<a href="#"><li>Win A Tailormade Savile Suit</li></a>
+								</ul>
+							</div>
+							
+							<div id="home-slide-btn" class="animated bounceInDown" style="animation-delay:1.4s; -webkit-animation-delay:1.4s;">
+								<div class="entr-btn" id="get-started-btn"></div>
+							</div>
+						</div>
+					</div> <!-- fifteen column layout -->
+				</div><!-- container -->
+			</div><!-- banner band -->
+		</li>
+		
+		<li>
+				<div class="band banner half-slide" style="background-image: url('images/banners/slide2-bg.jpg');">
+						<div class="container">
+							<div class="fifteen columns">
+								<div class="banner" id="example2" style="background-image: url('images/banners/slide2.jpg');">
+												<a href="competition.html">
+
+									<div class="slab-overlay">
+										<h1 class="slabtext" style="display: none;">Be the First to Drive the Enzo Altr!</h1>
+									</div>
+												</a>
+									
+									<div class="mob-overlay"></div>
+								</div>
+							</div><!-- fifteen column layout -->
+						</div><!-- container -->
+	
+				</div><!-- banner band -->
+		</li>
+	</ul>
+
+	<!-- Content
+  ================================================== -->
+	<div class="band editorial">
+		<div class="container">
+			
+			<!--- Editorial (Featured)  --->
+			<div class="ten columns featured">
+				<h5 class="page-title">Featured Competitions</h5>
+
+				<article>
+					<div class="featured-item">
+						<div class="featured-banner">
+							<a href="#"><img src="images/articles/savile/feature.jpg" /></a>
+						</div>
+						
+						<div class="featured-logo">
+							<a href="#"><img src="images/articles/savile/logo.png" /></a>
+						</div>
+						
+						<h4><span>Savile Row Company</span> Launches New ‘Empire’ Range</h4>
+						<p>Ut convallis mauris et mauris interdum aliquam. Sed in rutrum lectus. Quisque at laoreet neque. Quisque malesuada semper adipiscing. Quisque in aliquet nunc. Donec nec nulla tortor. Vestibulum laoreet nec turpis ut ullamcorper. Sed in rutrum lectus. Quisque at laoreet neque.</p>
+						
+						<div class="item-stats">
+							<ul>
+								<li><i class="icon-user"></i> 211 <hidden>Entries</hidden></li>
+								<li><i class="icon-time"></i> 2 Days<hidden>, 19 Hours, 18 Hour</hidden></li>
+							</ul>
+							
+							<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+						</div>						
+					</div>
+				</article>
+				
+					<div class="clear"></div>
+			
+				<article>
+					<div class="featured-item">
+						<div class="featured-banner">
+							<a href="#"><img src="images/articles/zinc/feature.jpg" /></a>
+						</div>
+						
+						<div class="featured-logo">
+							<a href="#"><img src="images/articles/zinc/logo.png" /></a>
+						</div>
+						
+						<h4><span>Zinc Restaurant</span> Launches New Range of Exotic Healthy Cuisine</h4>
+						<p>Ut convallis mauris et mauris interdum aliSed in rutrum lectus. Quisque at laoreet neque. Quisque malesuada semper adipiscing. Quisque in aliquet nunc. Donec nec nulla tortor. Vestibulum laoreet nec turpis ut ullamcorper.quam. Sed in rutrum lectus. Quisque at laoreet neque.</p>
+						
+						<div class="item-stats">
+							<ul>
+								<li><i class="icon-user"></i> 211 <hidden>Entries</hidden></li>
+								<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+							</ul>
+							
+							<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+						</div>							
+					</div>
+				</article>
+			</div> 
+			
+			<!-- Sidebar
+		  ================================================== -->			
+			
+			<div class="five columns sidebar">
+				<h5 class="page-title top-10-prizes">Top Prizes</h5>
+
+				<div class="prize-radar">
+					<ul>
+						<a href="competition.html">
+							<li class="prize-alt">
+								<div class="prize-img" style="background-image: url('images/prizes/1.jpg');"></div>
+								<h5>Kindle Fire</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="competition.html">
+							<li>
+								<div class="prize-img" style="background-image: url('images/prizes/2.jpg');"></div>
+								<h5>Rekording Fruity</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="competition.html">
+							<li class="prize-alt">
+								<div class="prize-img" style="background-image: url('images/prizes/3.jpg');"></div>
+								<h5>iPhone 5S</h5>
+								<div class="entr-btn"></div>
+							</li>		
+						</a>
+						
+						<a href="competition.html">				
+							<li>
+								<div class="prize-img" style="background-image: url('images/prizes/4.jpg');"></div>
+								<h5>OnePiece Onsie</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="competition.html">
+							<li class="prize-alt prize-hidden">
+								<div class="prize-img" style="background-image: url('images/prizes/5.jpg');"></div>
+								<h5>Ciroc Vodka</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="competition.html">
+							<li class="prize-hidden">
+								<div class="prize-img " style="background-image: url('images/prizes/6.jpg');"></div>
+								<h5>Lamborg Champagne</h5>
+								<div class="entr-btn"></div>
+							</li>						
+						</a>
+					</ul>
+				</div>
+				
+				<div class="sidebar-promo" id="sb-promo-1">
+					<a href="#"><img src="images/promos/hot-tub-cinema.jpg" /></a>
+				</div>
+				
+				<div class="sidebar-promo" id="sb-promo-2">
+					<a href="#"><img src="images/promos/mobile-app.jpg" /></a>
+				</div>
+			</div>
+		</div><!--- container -->
+	</div><!-- content band -->
+	
+	<!-- Competitions
+  ================================================== -->	
+	<div class="band content">
+		<div class="container">
+			<h5 class="page-title">Popular Competitions</h5>			
+			
+				<div class="clear"></div>
+							
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Day Paintballing For 5</h4></div>
+							
+							<img src="images/articles/delta-paintball/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Bottle Of Lanson Champagne</h4></div>
+							<img src="images/articles/lanson/block.jpg" />
+							
+							<h5><span>Rekordlig</span> Fruity-Tooty Irish Cider</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win Fruity Irish Cider</h4></div>
+							<img src="images/articles/rekorderlig/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches New ‘Empire’</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+					<div class="clear"></div>
+								
+				<h5 class="page-title">Be The First!</h5>							
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Day Paintballing For 5</h4></div>
+							<img src="images/articles/delta-paintball/block.jpg" />
+
+							<h5><span>Savile Row</span> Company Launches</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Bottle Of Lanson Champagne</h4></div>
+							<img src="images/articles/lanson/block.jpg" />
+
+							<h5><span>Rekordlig</span> Fruity-Tooty Irish Cider</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win Fruity Irish Cider</h4></div>
+							<img src="images/articles/rekorderlig/block.jpg" />
+
+							<h5><span>Savile Row</span> Company Launches New Range</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>		
+					
+					<div class="clear"></div>			
+					
+				<h5 class="page-title">You Might Like</h5>							
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Day Paintballing For 5</h4></div>
+							<img src="images/articles/delta-paintball/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Bottle Of Lanson Champagne</h4></div>
+							<img src="images/articles/lanson/block.jpg" />
+							
+							<h5><span>Rekordlig</span> Fruity-Tooty Irish Cider</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win Fruity Irish Cider</h4></div>
+							<img src="images/articles/rekorderlig/block.jpg" />
+							
+							<h5><span>Savile Row</span> Launches New ‘Empire’ Range</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="competition.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>										
+					
+		</div><!--- container -->
+	</div><!-- content band -- >
+	
+	<!-- Closed Competitions
+  ================================================== -->	
+	<div class="band content content-footer">
+		<div class="container">
+			<h5 class="page-title">Closed Competitions</h5>			
+			
+				<div class="clear"></div>
+							
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Day Paintballing For 5</h4></div>
+							
+							<img src="images/articles/delta-paintball/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-lock"></i> Closed (24/03/2013)</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Bottle Of Lanson Champagne</h4></div>
+							<img src="images/articles/lanson/block.jpg" />
+							
+							<h5><span>Rekordlig</span> Fruity-Tooty Irish Cider</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-lock"></i> Closed (24/03/2013)</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win Fruity Irish Cider</h4></div>
+							<img src="images/articles/rekorderlig/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches New ‘Empire’</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-lock"></i> Closed (24/03/2013)</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>	
+		</div><!--- container -->
+	</div><!-- content band -- >	
+	
+	<!-- Footer
+  ================================================== -->	
+	<div class="band footer">
+		<div class="container">
+		
+			<div class="two columns">
+				<div class="footer-logo-pointer"><i class="icon-caret-down"></i></div>
+				<div class="footer-logo"></div>
+			</div>
+			
+			<div class="eight columns">
+				<div class="footer-links">
+					<ul>
+						<li><a href="#">About Entr</a></li>
+						<li><a href="#">How Does It Work</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Meet the Team</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-copy">
+					&copy Copyright Entr.co 2013, made with <i class="icon-heart"></i> in London, UK.
+				</div>
+			</div>
+			
+			<div class="five columns">
+				<div class="footer-social">
+					<ul>
+						<a href="#"><li><div class="entr-btn fb-login-btn fb-entr"><i class="icon-facebook"></i><span>Find Us On Facebook</span></div></li></a>
+						<a href="#"><li><div class="entr-btn twitter-login-btn"><i class="icon-twitter"></i></div></li></a>					
+						<a href="#"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>					
+					</ul>
+				</div>
+			</div>
+			
+		</div><!--- container -->
+	</div><!-- footer band-->
+	
+</body>
+</html>

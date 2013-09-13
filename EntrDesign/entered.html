@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Entr | Discover & Win!</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- JS
+  ================================================== -->
+	<!--Global -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!--Slider -->
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+
+	<!--Slabtext -->
+	<script src="js/jquery.slabtext.js"></script>
+
+	<!--Sticky Scroll -->
+	<script src="js/jquery.stickyscroll.js"></script>
+	
+	<!-- Entr Module -->
+	<script src="js/jquery.icheck.js"></script>
+	
+  	<!--Custom -->
+	<script src="js/custom.js"></script>
+
+	<!-- CSS
+  ================================================== -->
+	<!--Global -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--Slider -->	
+	<link href="js/assets/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- Slab Text -->
+	<link href="js/assets/slabtext.css" rel="stylesheet" />
+	
+	<!-- Animate -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	
+	<!-- Entr Module -->
+	<link href="js/assets/icheck/entr-custom.css" rel="stylesheet">
+	
+	<!-- Icons (w/Retina) -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  auto: true,
+			  preventDefaultSwipeY: false,
+			  swipeThreshold: 70,
+			  pause: 7000,
+			  autoHover: true
+			});
+		});		
+		
+		$(window).load(function() {
+		  $('.bxslider-mob').bxSlider({
+		  		auto: false,
+		  		controls: false,
+		  	    preventDefaultSwipeY: false,
+			    swipeThreshold: 70
+		  	})
+		  	
+   		  $(".entr-imgs").css("display", "block");
+		});		
+		
+		$(document).ready(function(){
+		  $('input').iCheck({
+		    checkboxClass: 'icheckbox_flat-entr-custom',
+		    radioClass: 'iradio_flat-entr-custom',
+		      increaseArea: '100%' 
+		  });
+		});
+	</script>
+
+</head>
+<body>
+	<!-- Header
+  ================================================== -->
+	<div class="band header">
+		<div class="container">
+			<div class="fifteen columns top-bar">
+
+				<a href="#!">
+				<div class="mob-nav" id="mob-nav-lnk"><i class="icon-align-justify"></i></div>
+				</a>
+			
+				<a href="#"><div class="logo"></div></a>
+	
+				<ul class="nav">
+					<a href="#!" id="discover-lnk"><li>Discover & Win!<i class="icon-chevron-down"></i></li></a>
+					<a href="#"><li>Closed Competitions</li></a>
+				</ul>
+				
+				
+				<div class="drop" id="discover-drop">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li class="nobrdr">
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						
+						<a href="#"><li class="discover-all">View All Competitions <i class="icon-chevron-right"></i></li></a>
+					</ul>
+				</div>
+			
+				<ul class="login">
+					<a href="#!" id="user-lnk" class="toggle">
+						<li>
+							<div class="user-logged-in">
+								<div class="user-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/1117511_1419176055_2061034126_q.jpg');">
+								</div>
+								
+								<p>Scott <hidden>Graham</hidden></p>
+								<i class="icon-chevron-down"></i>
+							</div>
+						</li>
+					</a>
+				</ul>
+				
+				<div class="drop" id="user-drop" class="toggle">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#"><li><i class="icon-user"></i> My Profile</li></a>
+						<a href="#"><li><i class="icon-trophy"></i> My Competitions</li></a>
+						<a href="#"><li><i class="icon-envelope"></i> Email Settings</li></a>
+						<a href="#"><li><i class="icon-comments"></i> Talk to Us</li></a>
+						<a href="#"><li class="nobrdr"><i class="icon-off"></i> Logout</li></a>
+					</ul>
+				</div>
+			</div><!-- fifteen column layout -->
+		</div><!-- container -->
+	</div><!--- header band -->
+
+
+	<!-- Focus on the Modal/Drop -->
+	<div class="dropdown-overlay"></div>
+	
+	<!-- Bannr Slider (Li Represents Slide)
+  ================================================== -->
+	<!---- IF SLIDER <ul class="bxslider">	----->
+	<ul>	
+		<li>
+			<div class="band banner half-slide" style="background-image: url('images/banners/slide2-bg.jpg');">
+				<div class="container">
+					<div class="fifteen columns">
+						<div class="banner" id="example2" style="background-image: url('images/banners/slide2.jpg');">
+						
+							<div class="slab-overlay">
+								<h1 class="slabtext animated bounceIn" style="display: none;">Be the First to Drive the Enzo Altr!</h1>
+							
+								<div id="slide-btn" class="animated fadeIn" style="bottom: 45px; animation-delay:2s; -webkit-animation-delay:2s;">
+									<a href="#"><div class="entr-btn" id="countdown-btn"><i class="icon-time"></i> 2 Days <span>:</span> 43 Hours <span>:</span> 24 Seconds</div></a>
+								</div>					
+							</div>
+							
+							<div class="mob-overlay animated fadeIn" style="animation-delay:1s; -webkit-animation-delay:1s;"></div>
+						</div>
+					</div><!-- fifteen column layout -->
+				</div><!-- container -->
+			</div><!-- banner band -->
+		</li>
+	</ul>
+
+	<!-- Content
+  ================================================== -->
+	<div class="band entr-competition">
+		<div class="container">
+		
+			<!--- Editorial --->
+			<div class="five columns entr-editorial">
+				<article>
+					<h2><span>E2 Experiences:</span> 650 Break Horsepower Injection!</h2>
+					<a href="#"><h6>www.discovere2.co.uk</h6></a>			
+					
+					<div class="item-stats entr-stats-mob">
+						<ul>
+							<li><i class="icon-user"></i> 211</li>
+							<li><i class="icon-time"></i> 23 Days</li>
+						</ul>
+						
+						<a href="#"><div class="entr-btn entr-btn-grid"></div></a>
+					</div>
+						
+					<div class="entr-edcopy">
+						<p class="edcopy-mob">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, nisl at luctus posuere, mi massa volutpat augue, eu blandit risus metus tristique sem. Praesent condimentum eros non risus vulputate, eget interdum lacus mollis. Morbi sed tellus hendrerit, dictum ipsum et, mattis mi.</p>
+		
+						<p>Etiam convallis tellus porttitor posuere mollis. Integer id lacinia leo. Ut iaculis, lectus nec aliquet gravida, leo nisl mattis ante, nec fringilla nulla dolor eu leo. Sed rutrum dolor nec justo adipiscing, non pulvinar tellus pretium. </p>
+						
+						<p>Duis venenatis euismod urna, eget facilisis ligula rhoncus et. Integer a lectus gravida, ultrices purus sed, accumsan urna. Aliquam cursus cursus est id malesuada. Etiam nec tellus interdum, laoreet purus ut, luctus sem.</p>
+						
+						<p>Donec id tincidunt velit. Sed non lectus et neque tempus sodales. Aliquam sed convallis erat. Pellentesque sollicitudin enim a gravida vestibulum. Nunc nulla nisl, rutrum eget tellus non, egestas cursus tellus.uris tristique.</p>
+						
+						<p>Etiam convallis tellus porttitor posuere mollis. Integer id lacinia leo. Ut iaculis, lectus nec aliquet gravida, leo nisl mattis ante, nec fringilla nulla dolor eu leo. Sed rutrum dolor nec justo adipiscing, non pulvinar tellus pretium. Etiam convallis tellus porttitor posuere mollis. Integer id lacinia leo. Ut iaculis, lectus nec aliquet gravida, leo nisl mattis.</p>
+						
+						<p>Duis venenatis euismod urna, eget facilisis ligula rhoncus et. Integer a lectus gravida, ultrices purus sed, accumsan urna.</p>
+						
+						<p>Donec id tincidunt velit. Sed non lectus et neque tempus sodales. Aliquam sed convallis erat. Pellentesque sollicitudin enim a gravida vestibulum. Nunc nulla nisl, rutrum eget tellus non, egestas cursus tellus.uris tristique.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, nisl at luctus posuere, mi massa volutpat augue.</p>			
+					</div>
+				</div>
+				
+				<!--- Editorial Promo Images --->
+				<div class="five columns entr-imgs sticky" style="display: none;">
+					<ul class="bxslider-mob">
+						<li><img src="images/articles/e2-experiences/block.jpg" /></li>
+						<li><img src="images/articles/e2-experiences/block2.jpg" /></li>
+						<li><img src="images/articles/e2-experiences/block3.jpg" /></li>
+						<li><img src="images/articles/e2-experiences/block4.jpg" /></li>
+					</ul>
+				</div>
+				
+				<!--- Competition Entry (Entr Module) --->
+				<div class="five columns entr-sidebar">
+				<div class="entr-module">
+					<div class="question">
+						<div class="entered-top">
+							<h3>Share & Unlock <span>Free Entries</span></h3>
+							<p>Thanks for your entry, good luck!</p>
+						</div>
+				
+						<div class="entr-stats">
+							<ul>
+								<li><i class="icon-user"></i> 211</li>
+								<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+							</ul>
+						</div>
+						
+						<ul class="question" id="entries-overview">
+							<li>
+								<div class="entries-no">
+									<span>3</span>
+								</div>
+								
+								<p>Entries</p>
+							</li>
+						</ul>
+					</div>
+						<br />
+					<div class="entr-like">
+						<h5><i class="icon-circle"><span>1</span></i> Like</h5>
+						<p>Increase your odds - Thre are still more chances to enter!</p>
+					</div>
+
+					<div class="entr-like">
+						<h5><i class="icon-circle"><span>2</span></i> Share</h5>
+						<p>Keep sharing the link below & earn another free entry for each person who enters with your custom link.</p>
+					</div>
+
+					<div class="entr-like">
+						<h5><i class="icon-circle"><span>3</span></i> Become a Fan</h5>
+						<p>Like, Tweet or +1 us and we’ll +1 you another free entry! How do you like them odds?</p>
+					</div>
+
+	
+					<div class="entr-prizes">
+						<h5><i class="icon-trophy"></i> 1st Prize</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, nisl at luctus...</p>
+					</div>
+	
+					<div class="entr-prizes">
+						<h5><i class="icon-trophy"></i> 2nd Prize</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, nisl at luctus...</p>
+					</div>
+
+					<div class="entr-promise">
+						<img src="images/promos/entr-promise.jpg" />
+					</div>
+					
+					<div class="entr-links">
+						<ul>
+							<li class="highlight"><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Your Privacy Matters</a></li>
+							<li><a href="#">How Entr Works</a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+		</div><!--- container -->
+	</div><!-- content band -->
+
+	
+	
+	<!-- Competitions 
+  ================================================== -->	
+	<div class="band content content-footer">
+		<div class="container">
+			<h5 class="page-title">Popular Competitions</h5>			
+			
+				<div class="clear"></div>
+							
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Day Paintballing For 5</h4></div>
+							
+							<img src="images/articles/delta-paintball/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="#"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win A Bottle Of Lanson Champagne</h4></div>
+							<img src="images/articles/lanson/block.jpg" />
+							
+							<h5><span>Rekordlig</span> Fruity-Tooty Irish Cider</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="#"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay"><h4>Win Fruity Irish Cider</h4></div>
+							<img src="images/articles/rekorderlig/block.jpg" />
+							
+							<h5><span>Savile Row</span> Company Launches New ‘Empire’</h5>
+							<p>Pellentesque varius risus vitae leo rutrum tempus. Mauris tristiquPellentesque varius risus vitae leo rutrum tempus. Mauris tristiqu...</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="#"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+
+		</div><!--- container -->
+	</div><!-- content band -- >
+	
+	<!-- Footer
+  ================================================== -->	
+	<div class="band footer">
+		<div class="container">		
+			<div class="two columns">
+				<div class="footer-logo-pointer"><i class="icon-caret-down"></i></div>
+				<div class="footer-logo"></div>
+			</div>
+			
+			<div class="eight columns">
+				<div class="footer-links">
+					<ul>
+						<li><a href="#">About Entr</a></li>
+						<li><a href="#">How Does It Work</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Meet the Team</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-copy">
+					&copy Copyright Entr.co 2013, made with <i class="icon-heart"></i> in London, UK.
+				</div>
+			</div>
+			
+			<div class="five columns">
+				<div class="footer-social">
+					<ul>
+						<a href="#"><li><div class="entr-btn fb-login-btn fb-entr"><i class="icon-facebook"></i><span>Find Us On Facebook</span></div></li></a>
+						<a href="#"><li><div class="entr-btn twitter-login-btn"><i class="icon-twitter"></i></div></li></a>					
+						<a href="#"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>					
+					</ul>
+				</div>
+			</div>
+			
+		</div><!--- container -->
+	</div><!-- footer band-->
+		
+</body>
+</html>
